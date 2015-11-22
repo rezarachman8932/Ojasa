@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ojasa</string>
+
+    <string name="app_id">947420882011426</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
