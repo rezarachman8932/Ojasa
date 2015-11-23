@@ -1,7 +1,21 @@
 <resources>
     <string name="app_name">Ojasa</string>
 
+    <!-- Facebook Application ID -->
     <string name="app_id">947420882011426</string>
+
+    <string name="label_login">LOGIN</string>
+    <string name="label_login_with_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="label_login_with_email">LOGIN WITH EMAIL</string>
+    <string name="label_register">REGISTER</string>
+    <string name="label_copyright">COPYRIGHT OJASA 2015</string>
+    <string name="label_email">EMAIL</string>
+    <string name="label_password">PASSWORD</string>
+    <string name="label_forgot_password">FORGOT PASSWORD</string>
+    <string name="label_enter_code">ENTER CODE</string>
+    <string name="label_input_code">Input the code that has been sent to your mobile number</string>
+    <string name="label_verify">VERIFY</string>
+    <string name="label_click_here"><u>click here</u></string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

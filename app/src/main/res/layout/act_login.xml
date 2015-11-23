@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/form_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/input_email"
+            android:hint="@string/label_email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/form_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_email"
+        android:background="@drawable/form_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/input_password"
+            android:hint="@string/label_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/form_password"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/text_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button_login"
+        android:text="@string/label_forgot_password"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_copyright"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/secondary_text_dark_nodisable"/>
+
+</RelativeLayout>

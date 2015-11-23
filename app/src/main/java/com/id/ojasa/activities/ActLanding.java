@@ -20,7 +20,7 @@ import com.id.ojasa.R;
 
 import java.util.Arrays;
 
-public class ActMain extends AppCompatActivity {
+public class ActLanding extends AppCompatActivity {
 
     private LoginButton loginButton;
     private TextView info;
@@ -33,7 +33,7 @@ public class ActMain extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
 
-        setContentView(R.layout.act_main);
+        setContentView(R.layout.act_landing);
 
         info = (TextView)findViewById(R.id.info);
         loginButton = (LoginButton)findViewById(R.id.login_button);
@@ -44,18 +44,18 @@ public class ActMain extends AppCompatActivity {
                 Profile profile = Profile.getCurrentProfile();
                 if (profile != null) {
                     info.setText(profile.getName());
-                    Toast.makeText(ActMain.this, profile.getName(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActLanding.this, profile.getName(), Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onCancel() {
-                Toast.makeText(ActMain.this, "onCancel", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActLanding.this, "onCancel", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(FacebookException e) {
-                Toast.makeText(ActMain.this, "onError", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActLanding.this, "onError", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -64,7 +64,7 @@ public class ActMain extends AppCompatActivity {
             protected void onCurrentProfileChanged(Profile oldProfile, Profile newProfile) {
                 if (newProfile != null) {
                     info.setText(newProfile.getName());
-                    Toast.makeText(ActMain.this, newProfile.getName(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActLanding.this, newProfile.getName(), Toast.LENGTH_SHORT).show();
                 }
             }
         };
