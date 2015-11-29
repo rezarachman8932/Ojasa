@@ -15,7 +15,12 @@
     <string name="label_enter_code">ENTER CODE</string>
     <string name="label_input_code">Input the code that has been sent to your mobile number</string>
     <string name="label_verify">VERIFY</string>
+    <string name="label_skip">SKIP</string>
     <string name="label_click_here"><u>click here</u></string>
+    <string name="label_full_name">FULL NAME</string>
+    <string name="label_birth_date">BIRTH DATE</string>
+    <string name="label_term_privacy_1">By registering, I agree to</string>
+    <string name="label_term_privacy_2">OJASA\'s <u>Terms of Service</u> &amp; <u>Privacy Policy</u></string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
