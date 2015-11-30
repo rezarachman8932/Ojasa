@@ -30,6 +30,7 @@ public class ActLanding extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toast.makeText(ActLanding.this, "onCreate", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.act_landing);
         ButterKnife.bind(this);
     }
@@ -70,18 +71,39 @@ public class ActLanding extends AppCompatActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(ActLanding.this, "onDestroy", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
+        Toast.makeText(ActLanding.this, "onResume", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        Toast.makeText(ActLanding.this, "onStop", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Toast.makeText(ActLanding.this, "onPause", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(ActLanding.this, "onStart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Toast.makeText(ActLanding.this, "onSaveInstanceState", Toast.LENGTH_SHORT).show();
     }
 
 }
